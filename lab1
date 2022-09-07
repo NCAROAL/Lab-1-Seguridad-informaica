@@ -17,9 +17,9 @@ dicc2 = {0 : 'Z', 1 : 'A', 2 : 'B', 3 : 'C', 4 : 'D', 5 : 'E',
  
 def desencriptar(mensaje, rott):
     decifrado = ''
-    for letter in mensaje:
+    for letra in mensaje:
         if(letra != ' '):
-            num = ( dicc1[letter] - rott + 26) % 26
+            num = ( dicc1[letra] - rott + 26) % 26
             decifrado += dicc2[num]
         else:
             decifrado += ' '
