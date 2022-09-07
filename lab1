@@ -53,7 +53,7 @@ rott = int(input("Ingrese el ROT--> "))
 resultado = desencriptar(mensaje.upper(), rott)
 print (resultado)
 
-llave = input('Enter the key : ').upper()
+llave = input('ingrese la llave : ').upper()
 nuevo=vigenere(resultado,llave)
 print(nuevo)
 			
